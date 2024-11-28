@@ -1,14 +1,8 @@
-# postgres_dmp
-A small tool which triggers postgresql dump for database based on config.yml as input
-
-Example of config.yml
-
-```yaml
-data_path: "/data/"
+data_path: "/data/postgres"
  
 rotation:
   period_days: 7
-  retention_days: 14
+  retention_days: 30
  
 servers:
   - db_hostname: host1.example.com
@@ -23,4 +17,3 @@ servers:
     db_user: user3
     db_password: password3
     db_port: 5432
-```
